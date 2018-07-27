@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <div class="">
+    <textarea id="summernote" name="editordata" [ngModel]="editorContent"></textarea>
+  </div>
+  <br>
+  <button type="button" name="button" (click)="leerDatos()">Leer datos</button>
+  <br>
+  <div class="">
+  {{this.editorContent}}
+  </div>

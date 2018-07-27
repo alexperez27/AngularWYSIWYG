@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <textarea id="froala-editor" [ngModel]="editorContent" (input)="editorContent=$event.target.textContent"></textarea>
+
+
+  <br>-----------------LIVE PREVIEW ------------------<br>
+  <div id="preview" class="fr-view" contenteditable="true" [textContent]="editorContent" (input)="editorContent=$event.target.textContent">
+  </div>
+<br>----------------MODEL VALUE-------------------<br>
+  <div class="">
+    {{this.editorContent}}
+  </div>
+
+<button type="button" name="button" (click)="leerDatos()">Leer datos</button>
+</div>
